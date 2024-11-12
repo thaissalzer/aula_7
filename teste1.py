@@ -24,6 +24,6 @@ servidores = {
 }
 
 df = pd.DataFrame(servidores)
-df
+st.write(df)
 
 
