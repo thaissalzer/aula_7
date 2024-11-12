@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+
 st.write("Sou servidor público!")
 
 
@@ -15,3 +17,13 @@ st.latex(r''' a+a r^1+a r^2+a r^3 ''')
 
 numero = st.slider('Selecione um número', min_value = 0, max_value = 100)
 st.text("Seu número é " + str(numero))
+
+servidores = {
+    'nomeServidor': ['Adriana', 'Monica', 'Samara'],
+    'salario': [1200,300,5000]
+}
+
+df = pd.DataFrame(servidores)
+df
+
+
