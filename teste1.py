@@ -35,5 +35,10 @@ opcao = st.selectbox(
     'Qual servidor você gostaria de selecionar?',
      df['nomeServidor'])
 
+#LEMBRETE: O formato de print é diferente do fstring de Python
+st.write(f'Você selecionou:  {opcao}')
+
+dfFiltrado = df.loc[df['nomeServidor'] == opcao]
+st.write(dfFiltrado)
 
 
