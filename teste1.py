@@ -24,6 +24,16 @@ servidores = {
 }
 
 df = pd.DataFrame(servidores)
+
+st.write("Criando uma tabela!")
+
+#tabelas interativas
 st.write(df)
+
+#inserindo um selectbox
+opcao = st.selectbox(
+    'Qual servidor você gostaria de selecionar?',
+     df['nomeServidor'])
+
 
 
